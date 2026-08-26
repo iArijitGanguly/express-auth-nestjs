@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "resolvePackageJsonExports": true,
+    "module": "node16",
+    "moduleResolution": "node16",
+    // "resolvePackageJsonExports": true,
     "esModuleInterop": true,
-    "isolatedModules": true,
+    // "isolatedModules": true,
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
@@ -21,7 +21,7 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
   },
   "include": ["src/**/*", "generated/**/*", "src/types/**/*.d.ts", "prisma7.config.ts"],
   "exclude": ["node_modules", "dist"]
