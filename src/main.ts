@@ -1,11 +1,14 @@
 import { RequestMethod, ValidationPipe, VersioningType } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
+import cookieParser from 'cookie-parser';
 
 import { AppModule } from './app.module';
 import { TransformInterceptor } from './utils/interceptors/transform.interceptor';
 
 async function bootstrap() {
     const app = await NestFactory.create(AppModule);
+
+    app.use(cookieParser());
 
     app.useGlobalPipes(
         new ValidationPipe({

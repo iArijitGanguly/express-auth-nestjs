@@ -23,6 +23,11 @@
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false,
   },
-  "include": ["src/**/*", "generated/**/*", "src/types/**/*.d.ts", "prisma7.config.ts"],
+  "include": [
+    "src/**/*",
+    "generated/**/*",
+    "prisma/**/*",
+    "prisma7.config.ts",
+  ],
   "exclude": ["node_modules", "dist"]
 }

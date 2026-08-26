@@ -32,6 +32,7 @@ export default defineConfig(
             '@typescript-eslint/no-explicit-any': 'off',
             '@typescript-eslint/no-floating-promises': 'off',
             '@typescript-eslint/no-unsafe-argument': 'warn',
+            '@typescript-eslint/no-unsafe-assignment': 'off',
             semi: ['error', 'always'],
             // indent: ['error', 4],
             'simple-import-sort/exports': 'error',
